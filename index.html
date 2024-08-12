@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/logoalura.png" type="image">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/logoalura.png" alt="Logo Alura">
+    </header>
+
+    <div class="container">
+        <div class="esquerda">
+            
+            <form>
+                <textarea id="texto-principal" type="text" placeholder="Digite seu texto"></textarea>
+                <div>
+                    <div class="alerta">
+                        <img src="./assets/simbol.png">
+                        <span>Apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="botoes">
+                        <button class="bt-cripto" id="criptografar">Criptografar</button>
+                        <button class="bt-descripto" id="descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="direita">
+            <div class="sem-retorno">
+                <img src="./assets/person.png" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada">
+                <h3 class="titulo-sem-retorno">Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div class="texto-criptografado d-none">
+                <p></p>
+                <button class="bt-copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
